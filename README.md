@@ -1,5 +1,5 @@
 # TicTacToe-Android-Game
-<h4>TicTacToe in Android Using Kotlin.</h4>
+<h4>TicTacToe Game in Android Using Kotlin.</h4>
 
 Features
 ---------
