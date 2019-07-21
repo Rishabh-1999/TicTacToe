@@ -16,7 +16,9 @@ class startActivity : AppCompatActivity() {
         setContentView(R.layout.activity_start)
 
         oneplayer.setOnClickListener() {
-            startActivity(Intent(this,onePlayerActivity::class.java))
+            val intent = Intent(this,onePlayerActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(intent)
         }
         twoplayer.setOnClickListener() {
             val mDialogView = LayoutInflater.from(this).inflate(R.layout.twoplayerdialog, null)
@@ -33,6 +35,7 @@ class startActivity : AppCompatActivity() {
                 else
                 {
                     val intent= Intent(this,twoPlayerActivity::class.java)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
                     intent.putExtra("player1name",player1name)
                     intent.putExtra("player2name",player2name)
                     startActivity(intent)
@@ -56,7 +59,7 @@ class startActivity : AppCompatActivity() {
         build.setMessage("Are you Sure you want to End Game")
         build.setPositiveButton("YES") {build,which ->
             build.dismiss()
-            finish()
+            System.exit(0)
         }
         build.setNegativeButton("NO"){build, which ->
             build.dismiss()

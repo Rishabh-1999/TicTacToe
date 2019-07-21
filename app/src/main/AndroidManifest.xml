@@ -9,11 +9,11 @@
             android:roundIcon="@drawable/app_icon"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".twoPlayerActivity">
+        <activity android:name=".twoPlayerActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".onePlayerActivity">
+        <activity android:name=".onePlayerActivity" android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".startActivity">
+        <activity android:name=".startActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

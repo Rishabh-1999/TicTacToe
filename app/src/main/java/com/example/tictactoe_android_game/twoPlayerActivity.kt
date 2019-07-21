@@ -46,7 +46,9 @@ class twoPlayerActivity : AppCompatActivity() {
         }
 
         btn_exitt.setOnClickListener {
-            startActivity( Intent(this,startActivity::class.java))
+            val intent = Intent(this,startActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(intent)
         }
     }
 
@@ -126,7 +128,9 @@ class twoPlayerActivity : AppCompatActivity() {
         build.setTitle("END GAME?")
         build.setMessage("Are you Sure you want to End Game")
         build.setPositiveButton("YES") {build,which ->
-            startActivity(Intent(this,startActivity::class.java))
+            val intent = Intent(this,startActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            startActivity(intent)
         }
         build.setNegativeButton("NO"){build, which ->
         }
