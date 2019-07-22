@@ -14,6 +14,7 @@ Features
 Consists Of
 -----------
 - Custom Class for Solo Player
+- Custom Class that uses every possisble combinations to find out best next move
 - Custom Class for Dual Player
 - Grid Layout
 
