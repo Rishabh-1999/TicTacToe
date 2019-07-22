@@ -11,8 +11,14 @@ Features
 - Highly performant
 - Developer friendly
 
-### Extra Dependencies
+Consists Of
+-----------
+- Custom Class for Solo Player
+- Custom Class for Dual Player
+- Grid Layout
 
+Extra Dependencies
+------------------
 ```
  implementation 'androidx.core:core-ktx:1.0.2'
  ```
