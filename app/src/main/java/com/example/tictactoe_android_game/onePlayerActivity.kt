@@ -33,7 +33,7 @@ class onePlayerActivity : AppCompatActivity() {
             text_view_result_oneplayer.text=""
             mapBoardToUi()
         }
-
+        
         btn_exit.setOnClickListener {
             val intent = Intent(this,startActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
